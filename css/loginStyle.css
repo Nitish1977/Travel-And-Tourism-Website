@@ -1,0 +1,127 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(135deg, #023659, #79a5ce); /* Gradient background */
+
+}
+.formdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form{
+    background-color: white;
+    max-height: 600px;
+    max-width: 400px;
+    padding: 50px 50px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgb(0, 0, 0);
+}
+
+input{
+    align-items: center;
+    background-color: rgb(240, 240, 240);;
+    display: block;
+    justify-content: center;
+    text-align: start;
+    border: 1px solid rgba(131, 130, 130, 0.893);
+    border-width: 1px;
+    padding: 10px 5px 10px 20px;
+}
+
+.email{
+    margin-top: 20px;
+    height: 40px;
+    width:300px;
+    border-radius: 20px;
+}
+.pass{
+    margin-top: 20px;
+    height: 40px;
+    width:300px;
+    border-radius: 20px;
+}
+.forget{
+    margin-top: 5px;
+}
+.forget a{
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+.log-btn{
+    margin-top: 10px;
+    height: 40px;
+    width:300px;
+    border-radius: 25px;
+    border-width: 0.1px;
+    color: white;
+    background-color:#42b8f8;
+    border-color:#42b8f8;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.335);
+}
+.log-btn:hover{
+    background-color: #2c7edc;
+    border-color: #2c7edc;
+}
+
+.account{
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+.account a{
+    text-decoration: none;
+   color:  rgb(255, 0, 0);
+}
+.direct{
+    cursor: pointer;
+}
+.or{
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    
+}
+.or .Abutton{
+    margin-top: 10px;
+    height: 40px;
+    width:300px;
+    border-radius: 25px;
+    border-width: 0.1px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.335);
+}
+.or .Gbutton{
+    margin-top: 20px;
+    height: 40px;
+    width:300px;
+    border-radius: 25px;
+    border-width: 0.1px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.335);
+}
+
