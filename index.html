@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel_with_Us</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script src="javaScrip.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto logo" href="#">Travel With Us</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Travel With Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#Packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#Destination">Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#Gallary">Gallary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="" class="sign-button" onclick="OpenSignupForm()">Sign up</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- hero section-->
+  <section id="Home" class="hero-section">
+    <video class="video-background" autoplay muted loop>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+      <div class="content">
+        <div class="line">
+          " Discover the most engaging <span class="text">places " </span><br>
+          <div class="subline">Plan your trip today..</div>
+          <div class="btns">
+            <a href="" class="btn1" onclick="OpenLoginForm()">Log In</a>
+            <a href="#" class="btn2" onclick="OpenExploreOptions()">Explore</a>
+          </div>
+          <div class="media-handle">
+            <i class='bx bxs-envelope' onclick="email()"></i>
+            <i class='bx bxl-twitter' onclick="twitter()"></i>
+            <i class='bx bxl-facebook-circle' onclick="facebook()"></i>
+            <i class='bx bxl-instagram-alt ' onclick="facebook()"></i>
+          </div>
+        </div>
+  </div>
+  </section>
+  <section id="Packages">
+    <div class="container text-center pkgcontainer ">
+      <h1>Popular Pacakges</h1>
+      <span class="txt">Checkout our packages</span>
+      <div class="row pkgrow">
+        <div id="first" class="col-lg-4 pkg">
+        </div>
+
+        <div id="second" class="col-lg-4 pkg">
+          <div class="detail">
+            <h4>EXPRINCE THE GREAT HOLIDAY ON THE BEACH</h4><br>
+            <p>Goa is renowned for its pristine beaches. Whether you seek tranquility or vibrant beach parties,
+              there’s something for everyone.
+            </p>
+          </div>
+          <div id="info" class="row row-cols-auto-center ">
+            <div class="col"><i class='bx bx-time'></i> 2D/3N</div>
+            <div class="col"><i class='bx bxs-group'></i> 240</div>
+            <div class="col"><i class='bx bx-current-location'></i> Goa</div>
+          </div>
+
+        </div>
+        <div id="third" class="col-lg-4 pkg">
+          <p>(239 reviews) <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star'></i><i class='bx bxs-star-half'></i><br>
+            <span class="rate">$200</span><br>
+            /per person
+          </P>
+          <button type="button" class="btn btn-outline-light" onclick="book()">Book now</button>
+
+        </div>
+      </div>
+      <div class="row pkgrow">
+        <div id="first2" class="col-lg-4 pkg">
+        </div>
+
+        <div id="second" class="col-lg-4 pkg">
+          <div class="detail">
+            <h4>WINTER HOLIDAY TO THE SHIMLA</h4><br>
+            <p>Shimla, city, capital of Himachal Pradesh state, northwestern India. The city lies northeast of
+              Chandigarh
+              on a ridge of the Himalayan foothills.
+            </p>
+          </div>
+          <div id="info" class="row row-cols-auto-center">
+            <div class="col"><i class='bx bx-time'></i> 3D/4N</div>
+            <div class="col"><i class='bx bxs-group'></i>500</div>
+            <div class="col"><i class='bx bx-current-location'></i> Shimla</div>
+          </div>
+
+        </div>
+        <div id="third" class="col-lg-4 pkg">
+          <p>(200 reviews) <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star-half'></i><i class='bx bx-star'></i><br>
+            <span class="rate">$190</span><br>
+            /per person
+          </P>
+          <button type="button" class="btn btn-outline-light" onclick="book()">Book now</button>
+
+        </div>
+      </div>
+      <div class="row pkgrow">
+        <div id="first3" class="col-lg-4 pkg">
+        </div>
+
+        <div id="second" class="col-lg-4 pkg">
+          <div class="detail">
+            <h4>JAISALMER WEEKEND VACATION</h4><br>
+            <p>Jaisalmer is a former medieval trading center and a princely state in the western Indian state of
+              Rajasthan, in the heart of the Thar Desert. </p>
+          </div>
+          <div id="info" class="row row-cols-auto-center">
+            <div class="col"><i class='bx bx-time'></i> 2D/2N</div>
+            <div class="col"><i class='bx bxs-group'></i> 130</div>
+            <div class="col"><i class='bx bx-current-location'></i> Jaisalmer</div>
+          </div>
+
+        </div>
+        <div id="third" class="col-lg-4 pkg">
+          <p>(198 reviews) <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star'></i><i class='bx bxs-star-half'></i><br>
+            <span class="rate">$220</span><br>
+            /per person
+          </P>
+          <button type="button" class="btn btn-outline-light" onclick="book()">Book now</button>
+
+        </div>
+      </div>
+      <button id="more" type="button" class="btn btn-primary">view all packages</button>
+    </div>
+  </section>
+  <!-- destination -->
+  <section id="Destination" class="destination">
+    <div class="container text-center">
+      <div class="row header-p">
+        <h1>Destination</h1>
+        <h3>Choose your Destination</h3>
+      </div>
+      <div class="row upper">
+        <div class="col-md-6">
+          <div class="img-with-text">
+            <img src="image/destination-1.jpg" class="img-fluid" alt="" srcset="">
+            <div class="text">Maldives</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-with-text">
+            <img src="image/destination-2.jpg" class="img-fluid" alt="" srcset="">
+            <div class="text">Thailand</div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row lower">
+        <div class="col-md-4">
+          <div class="img-with-text">
+            <img src="image/destination-3.jpg" class="img-fluid" alt="" srcset="">
+            <div class="text">Malayasia</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-with-text">
+            <img src="image/destination-4.jpg" class="img-fluid" alt="" srcset="">
+            <div class="text">Nepal</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-with-text">
+            <img src="image/destination-5.jpg" class="img-fluid" alt="" srcset="">
+            <div class="text">Indonesia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallary -->
+  <section id="Gallary">
+    <div class="container gallarycontainer">
+      <div class="row-center gallaryheading">
+        <h1>Gallary</h1>
+        <h3>Image from travellers</h3>
+      </div>
+      <div class="row gallaryrowup">
+        <div class="col-md-4 gallaryimg">
+          <img src="image/gallary1.jpg" class="img-fluid" alt="" srcset="">
+
+        </div>
+        <div class="col-md-4 gallaryimg">
+          <img src="image/gallary2.jpg" class="img-fluid" alt="" srcset="">
+
+        </div>
+        <div class="col-md-4 gallaryimg">
+          <img src="image/gallary3.jpeg" class="img-fluid" alt="" srcset="">
+
+        </div>
+      </div>
+      <div class="row gallaryrowlower">
+        <div class="col-md-6 gallaryimg">
+          <img src="image/gallary5.jpg" class="img-fluid" alt="" srcset="">
+
+        </div>
+        <div class="col-md-6 gallaryimg">
+          <img src="image/gallary6.jpeg" class="img-fluid" alt="">
+
+        </div>
+      </div>
+    </div>
+    <div class="row gallarybtn">
+
+    </div>
+
+
+  </section>
+  <!-- About -->
+  <section id="About">
+    <div class="container  aboutcontainer">
+      <div class="row aboutupper">
+        <div class="col-md-5 ">
+          <div class="row abouttxt">
+            <span class="aboutheading">
+              <h1>About Us</h1>
+            </span>
+            Explore all tour of the world with us.
+          </div>
+
+          <div class="row aboutsubline">
+            "Embark on Unforgettable Journeys with Us - Explore, Experience, and Discover Your World"<br>
+            This tagline conveys a sense of adventure, discovery, and personalized travel experiences, inviting users to engage with the website for their travel needs.
+          </div>
+          <div class="row aboutimportant">
+            <div class="col-2 icon">
+              <i class='bx bxs-compass'></i>
+
+            </div>
+            <div class="col-10 head">
+              <h2>Tour guide</h2>
+              <span class="aboutservices">"Expertly Guided Adventures - Uncover Hidden Gems with Knowledgeable Local Guides"</span>
+
+            </div>
+          </div>
+
+          <div class="row aboutimportant">
+            <div class="col-2 icon">
+              <i class='bx bxs-briefcase'></i>
+
+            </div>
+            <div class="col-10 head">
+              <h2>Friendly price</h2>
+              <span class="aboutservices">"Discover the World with Warmth and Hospitality - Where Every Journey Feels Like Home"</span>
+            </div>
+          </div>
+
+          <div class="row aboutimportant">
+            <div class="col-2 icon">
+              <i class='bx bxs-car'></i>
+            </div>
+            <div class="col-10 head">
+              <h2>Reliable tour</h2>
+              <span class="aboutservices">"Your Trusted Companion for Seamless Travel - Reliability Redefined, Every Step of the Way"</span>
+            </div>
+          </div>
+
+          <button type="button" class="exploremorebtn">Explore More</button>
+
+        </div>
+        <div class="col-md-7">
+          <img src="image/undraw_travel_mode_re_2lxo.svg" class="img-fluid" alt="" srcset="">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact -->
+  <section id="Contact" class="contact">
+    <iframe
+        width="100%"
+        height="400"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54552.556255130774!2d75.59880917505487!3d31.28896162581444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1712606589782!5m2!1sen!2sin" 
+        allowfullscreen>
+    </iframe>
+    <div class="container contactcontainer">
+      <div class="row conatactrow">
+        <div class="col-md-5 firstcol">
+          <h1>Travel With Us</h1>
+          "Let's turn the page to adventure together - where every destination is a new chapter waiting to be written."
+        </div>
+        <div class="col-md-2 secondcol">
+          <h2>Contact</h2>
+          Feel free to contact and reach us !!<br>
+          <div class="contactdeatils">
+            <div class="mob">
+              <i class='bx bxs-phone'></i> +918271459878
+
+            </div>
+            <div class="email">
+              <i class='bx bxs-envelope'></i> travelwithus@gmail.com
+
+            </div>
+            <div class="address">
+              <i class='bx bx-current-location'></i> Jalandhar, Punjab
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-5 thirdcol">
+          Subscribe our newsletter for more update & news !!
+          <input type="email" placeholder="Enter Your Email" class="emailforsubscribe">
+          <br>
+          <button type="button" onclick="subscribe()">Subscribe Now</button>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer-media">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-6 rights">
+            © 2024 Nitish Kumar. All rights reserved
+          </div>
+          <div class="col-lg-6 media-links">
+
+            <i class='bx bxl-facebook-circle' onclick="facebook()"></i>
+            <i class='bx bxl-twitter' onclick="twitter()"></i>
+            <i class='bx bxl-instagram' onclick="instagram()"></i>
+            <i class='bx bxl-linkedin' onclick="linkedin()"></i>
+            <i class='bx bxl-google' onclick="google()"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    function OpenSignupForm() {
+      window.open('signIn.html' );
+
+    }
+    function OpenLoginForm() {
+      window.open('Login.html' );
+    }
+    function email() {
+      window.open('https://mail.google.com/', '_blank');
+
+    }
+    function twitter() {
+      window.open('https://twitter.com/?lang=en-in', '_blank');
+
+    }
+    function facebook() {
+      window.open('https://www.facebook.com/', '_blank');
+
+    }
+    function instagram() {
+      window.open('https://www.instagram.com/', '_blank');
+
+    }
+    function linkedin() {
+      window.open('https://www.linkedin.com/', '_blank');
+
+    }
+    function google() {
+      window.open('https://www.google.co.in/', '_blank');
+
+    }
+    function book(){
+      window.open('book.html' );  
+    }
+    function subscribe() {
+      var email = document.querySelector('.emailforsubscribe').value;
+      if (email) {
+        alert('Thank you for subscribing our newsletters!\n Your email is ' + email);
+      }
+    }
+  </script>
+</body>
+
+</html>
