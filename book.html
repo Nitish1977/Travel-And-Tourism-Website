@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Form</title>
+    <script src="book.js"></script>
+    
     <style>
         /* Your CSS styles here */
         body {
@@ -133,37 +135,6 @@
             <input type="submit" value="Pay now" onclick="return validateAndSubmit('payNow')">
         </form>
     </div>
-
-    <script>
-        function validateForm() {
-            var fullname = document.forms["paymentForm"]["fullname"].value;
-            var email = document.forms["paymentForm"]["email"].value;
-            var phone = document.forms["paymentForm"]["phone"].value;
-            var password = document.forms["paymentForm"]["password"].value;
-            var confirm_password = document.forms["paymentForm"]["confirm_password"].value;
-            var departure = document.forms["paymentForm"]["departure"].value;
-
-            if (fullname == "" || email == "" || phone == "" || password == "" || confirm_password == "" || departure == "") {
-                alert("Please fill all fields.");
-                return false;
-            }
-
-            if (password !== confirm_password) {
-                alert("Your passwords do not match.");
-                return false;
-            }
-            return true;
-        }
-
-        function validateAndSubmit(action) {
-            if (validateForm()) {
-                if (action === 'payNow') {
-                    window.location.href = 'payment.html';
-                }
-            }
-            return false;
-        }
-    </script>
 
 </body>
 
