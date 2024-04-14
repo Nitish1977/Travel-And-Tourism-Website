@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formdiv">
+        <div class="form">
+            <form id="loginForm" action="#">
+                <h1>Welcome Back!!</h1>
+                <input type="email" value="" placeholder="Email" class="email">
+                <span class="error" id="emailError"></span>
+                <input type="password" name="" id="" placeholder=" Password" class="pass">
+                <span class="error" id="passwordError"></span>
+                <div class="forget"><a href="">Forget Password?</a></div>
+                <button type="submit" class="log-btn"> Log in</button>
+                <div class="account">
+                    Don't have an account? <a onclick="openModal()" class="direct">Sign up</a>
+                </div>
+                <div class="or">
+                    or<br>
+                    <button type="button" class="Abutton">Log in with Apple</button>
+                    <button type="button" class="Gbutton">Log in with Google</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            var email = document.querySelector('.email').value;
+            var password = document.querySelector('.pass').value;
+            var emailError = document.getElementById('emailError');
+            var passwordError = document.getElementById('passwordError');
+            var isValid = true;
+
+            if (email.trim() === '') {
+                emailError.textContent = 'Please enter your email';
+                isValid = false;
+            } else {
+                emailError.textContent = '';
+            }
+
+            if (password.trim() === '') {
+                passwordError.textContent = 'Please enter your password';
+                isValid = false;
+            } else {
+                passwordError.textContent = '';
+            }
+
+            if (!isValid) {
+                event.preventDefault(); // Prevent form submission if validation fails
+            } else {
+                // Assuming the user's name is "John Doe"
+                alert('Welcome Back'); // Replace "John Doe" with the user's actual name
+            }
+        });
+        function openModal(){
+            window.location.href = 'signIn.html';
+
+        }
+    </script>
+</body>
+
+</html>

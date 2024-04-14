@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signIn.css">
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formdiv">
+        <div class="form">
+            <form id="signupForm">
+                <h1>Create account</h1>
+                <input type="text" placeholder="Name" class="name">
+                <span class="error" id="nameError"></span>
+                <input type="email" value="" placeholder="Email" class="email">
+                <span class="error" id="emailError"></span>
+                <input type="password" name="" id="password" placeholder="Password" class="pass">
+                <span class="error" id="passwordError"></span>
+                <button type="button" class="sign-btn" onclick="validateForm()">Create account</button>
+                <div class="or">
+                    Already have an account?<a onclick="openModal()" class="direct"> Log in</a><br>
+                    <button type="button" class="Abutton">Sign up with Apple</button>
+                    <button type="button" class="Gbutton">Sign up with Google</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var name = document.querySelector('.name').value;
+            var email = document.querySelector('.email').value;
+            var password = document.querySelector('.pass').value;
+            var nameError = document.getElementById('nameError');
+            var emailError = document.getElementById('emailError');
+            var passwordError = document.getElementById('passwordError');
+            var isValid = true;
+
+            if (name.trim() === '') {
+                nameError.textContent = 'Please enter your name';
+                isValid = false;
+            } else {
+                nameError.textContent = '';
+            }
+
+            if (email.trim() === '') {
+                emailError.textContent = 'Please enter your email';
+                isValid = false;
+            } else {
+                emailError.textContent = '';
+            }
+
+            if (password.length < 8) {
+                passwordError.textContent = 'Password must be at least 8 characters long';
+                isValid = false;
+            } else if (!/[a-zA-Z]/.test(password)) {
+                passwordError.textContent = 'Password must contain alphabets';
+                isValid = false;
+            } else if (!/[^a-zA-Z0-9]/.test(password)) {
+                passwordError.textContent = 'Password must contain special characters';
+                isValid = false;
+            } else {
+                passwordError.textContent = '';
+            }
+
+            if (isValid) {
+                // Perform registration action here, for example, display a message
+                alert('Account created successfully!');
+            }
+        }
+        function openModal(){
+            window.location.href = 'login.html';
+
+        }
+    </script>
+</body>
+
+</html>

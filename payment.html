@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #023659, #79a5ce); /* Gradient background */
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .payment-info {
+            margin-bottom: 20px;
+        }
+
+        .payment-info p {
+            margin: 5px 0;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .payment-methods a{
+            color: rgb(3, 84, 142);
+            font-size: 70px;
+            transition: transform 0.3s ease-in-out;
+            filter: grayscale(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .payment-methods a:hover{
+            transform: scale(1.2);
+            filter: grayscale(0%);
+
+
+        }
+        .payment-status {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Make payment</h1>
+        <div class="payment-info">
+            <p>Total Amount: $200.00</p>
+            <p>Product: Travel Package</p>
+        </div>
+        <div class="payment-methods">
+            <a href="http://" target="_blank" ><i class='bx bxl-mastercard' ></i></a>
+           <a href="http://"><i class='bx bxl-paypal'></i></a>
+            <a href="http://"><i class='bx bxl-visa' ></i></a>
+        </div>
+        <div class="payment-status">
+            <!-- Payment status will be updated dynamically -->
+        </div>
+    </div>
+</body>
+</html>
