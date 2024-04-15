@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Pompiere&display=swap');
+.pkgcontainer {
+    padding-top: 20px;
+}
+
+.pkgcontainer h1 {
+    font-weight: 900;
+    font-family: "Lobster", sans-serif;
+    font-weight: bolder;
+    color: rgb(21, 172, 242);
+}
+.txt{
+    font-family:poppins;
+    color: rgb(253, 64, 64);
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+}
+
+.pkgrow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pkg {
+    height: 250px;
+}
+
+.pkg img {
+    height: 250px;
+    width: 200px;
+}
+
+#first {
+    background-image: url(mal-place.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#first2 {
+    background-image: url(shutterstock-463299110_destinationMain_1531818723725.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#first3 {
+    background-image: url(1516873106_Phuket-Thailand.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#second {
+    background-color: rgb(219, 234, 247);
+}
+
+#third {
+    background-color: rgb(8, 110, 243);
+}
+
+#third p {
+    color: white;
+    margin-top: 40px;
+
+}
+
+.detail {
+    margin-top: 20px;
+}
+
+.detail h4 {
+    font-weight: bolder;
+}
+
+.detail p {
+    color: rgb(111, 111, 111);
+}
+
+#info {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+
+.rate {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#more {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.pagination a{
+    color: rgb(75, 75, 75);
+    font-weight: bolder;
+}
