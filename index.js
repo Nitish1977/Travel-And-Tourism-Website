@@ -6,6 +6,9 @@ function OpenSignupForm() {
 function OpenLoginForm() {
   window.open('login.html' );
 }
+function more() {
+  window.open('more.html' );
+}
 function email() {
   window.open('https://mail.google.com/', '_blank');
 
