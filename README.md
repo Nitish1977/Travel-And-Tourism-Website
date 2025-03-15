@@ -16,7 +16,7 @@ Welcome to the **Travel & Tourism Website**! 🌍 This is a frontend-based proje
 ## 🖥️ Tech Stack
 ![HTML](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5) ![CSS](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3) ![Bootstrap](https://img.shields.io/badge/Bootstrap-purple?style=for-the-badge&logo=bootstrap) ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript)
 
-- **Frontend:** HTML, Bootstrap, JavaScript
+- **Frontend:** HTML, CSS, Bootstrap, JavaScript
 
 ---
 
@@ -41,7 +41,7 @@ Simply open the `index.html` file in your web browser to explore the website.
 ---
 
 ## 🌍 Live Demo
-👉 **[Click Here to Visit the Website](https://your-live-demo-link.com/)**
+👉 **[Click Here to Visit the Website](https://nitish1977.github.io/Travel-And-Tourism-Website/)**
 
 ---
 
